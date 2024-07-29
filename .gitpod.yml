@@ -2,7 +2,7 @@ image:
   file: .gitpod.Dockerfile
 
 ports:
-  - port: 2222
+  - port: 443
     onOpen: ignore
   - port: 80
     onOpen: open-browser
@@ -10,8 +10,6 @@ ports:
 tasks:
   - init: |
       sudo adduser --disabled-password --gecos "" vpnuser
-      # Here, you should set up SSH keys for the user instead of a password
-      # For demonstration purposes, we'll set a password, but it's not recommended
       echo "vpnuser:vpnpass123" | sudo chpasswd
     command: |
       sudo service ssh status

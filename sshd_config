@@ -1,5 +1,5 @@
 # This is a basic SSH configuration file with some custom settings
-Port 2222
+Port 443
 PermitRootLogin no
 PasswordAuthentication yes
 ChallengeResponseAuthentication no

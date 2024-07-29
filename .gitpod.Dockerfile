@@ -7,8 +7,8 @@ RUN apt-get update && apt-get install -y openssh-server
 # Copy a custom SSH config file
 COPY sshd_config /etc/ssh/sshd_config
 
-# Expose the SSH port (use a high port like 2222 to avoid conflicts)
-EXPOSE 2222
+# Expose the SSH port (use port 443 as specified)
+EXPOSE 443
 
 # Start the SSH service
 RUN service ssh restart
