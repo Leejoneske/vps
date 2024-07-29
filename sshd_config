@@ -1,0 +1,10 @@
+# This is a basic SSH configuration file with some custom settings
+Port 2222
+PermitRootLogin no
+PasswordAuthentication yes
+ChallengeResponseAuthentication no
+UsePAM yes
+X11Forwarding yes
+PrintMotd no
+AcceptEnv LANG LC_*
+Subsystem sftp /usr/lib/openssh/sftp-server
